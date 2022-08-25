@@ -1,9 +1,18 @@
 #include "core\script_macros.hpp"
 
 #define description
+#define true 1
+#define false 0
 #include "core\description.hpp" //DO NOT REMOVE
 #include "modules\modules.sqf" //DO NOT REMOVE
+#undef true
+#undef false
 #undef description
+
+#define description_other
+#include "core\description.hpp" //DO NOT REMOVE
+#include "modules\modules.sqf" //DO NOT REMOVE
+#undef description_other
 
 class CfgFunctions {
 	class FW {
@@ -119,4 +128,11 @@ class Params {
 	#include "core\description.hpp" //DO NOT REMOVE
 	#include "modules\modules.sqf" //DO NOT REMOVE
 	#undef description_params
+};
+
+class CfgDebriefingSections {
+	#define description_debriefing_sections
+	#include "core\description.hpp" //DO NOT REMOVE
+	#include "modules\modules.sqf" //DO NOT REMOVE
+	#undef description_debriefing_sections
 };

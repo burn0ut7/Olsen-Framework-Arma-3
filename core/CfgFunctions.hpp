@@ -29,14 +29,13 @@ class Core {
 	class removeAllGear {};
 	class removeAllVehicleGear {};
 	class parsedTextDisplay {};
-	class setTeamVariable {};
 	class spectatePrep {};
 	class trackAsset {};
-	class trackUnit {};
 	class untrackUnit {};
 	class briefing {};
-	class gearScript {};
 	class gearExport {};
+	class gearScript {};
+	class getCO {};
 	class vehGearScript {};
 	class postChecks {};
 	class initLoadingScreen {};
@@ -51,6 +50,10 @@ class Spectator {
 	class parseBriefing {};
 	class initCamera {};
 	class cameraHandleKeyDown {};
+	class freezeUnit {};
+	class thawUnit {};
+	class handleComboBoxChange {};
+	class handleListChange {};
 };
 
 class XEH {
